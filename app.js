@@ -11,7 +11,8 @@ var cache = {}
 
 redis.subscribe('new-message');
 
-var io = require('socket.io').listen(process.env.PORT || 9000);
+var server = require('http').createServer().listen(process.env.PORT || 9000),
+        io = require('socket.io').listen(server);
 
 io.set('origins', process.env.REQUEST_ORIGIN );
 
