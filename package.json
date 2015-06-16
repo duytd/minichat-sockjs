@@ -1,0 +1,16 @@
+{
+ "name": "chat-server",
+ "version": "0.0.1",
+ "description": "Realtime messaging server",
+ "main": "app.js",
+ "scripts": {
+  "start": "node app.js"
+  },
+  "engines": {
+   "node": "0.12.2"
+   },
+   "dependencies": {
+    "socket.io": "~0.9.6",
+    "mime": "~1.2.7"
+   }
+  }
